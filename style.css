@@ -1,0 +1,499 @@
+css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: url('images/conference.webp') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+header .container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 200px;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav .nav-links li {
+    margin: 0 20px;
+}
+
+nav .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+.read-more-btn {
+    margin : 20px; 
+    color: white; 
+    padding: 10px 20px; 
+    
+    border-radius: 5px; /* Add rounded corners if needed */
+    text-decoration: none; /* Remove underline from the link */
+    font-size: 16px; /* Adjust the font size */
+}
+nav .nav-links li a:hover {
+    color: #ff4a57;
+}
+
+header h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+header .btn {
+    padding: 10px 20px;
+    background: #ff4a57;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.details {
+    background: #f4f4f4;
+    padding: 50px 20px;
+}
+
+.details .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.details .text {
+    flex: 1;
+    padding-right: 30px; /* Adjust the spacing between text and image */
+}
+
+.details .image {
+    flex: 1;
+}
+
+.details .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.conference-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+footer h3 {
+    margin: 0;
+    font-size: 18px;
+}
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Watch Video Section */
+.watch-video .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.description-container {
+    flex: 1;
+    max-width: 40%;
+}
+
+.video-container {
+    flex: 1;
+    max-width: 60%;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 315px;
+}
+
+.video-description {
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #333;
+}
+
+.description-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Creative Speakers Section */
+.creative-speakers-container {
+    background-color: #eceff1;
+    padding: 40px 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left */
+}
+
+.creative-speakers-container h2 {
+    text-align: left; /* Align header to the left */
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0; /* Align to the left by removing auto margin */
+    overflow: hidden;
+    text-align: left; /* Align carousel to the left */
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.speaker {
+    min-width: 25%;
+    padding: 10px;
+    text-align: center;
+    margin-right: 20px; /* Add spacing between speakers */
+}
+
+.speaker img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.speaker-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Our Programs Section */
+.programs-section {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.programs-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.programs-section p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.tab-menu {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tab-link {
+    background-color: #f4f4f4;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.tab-link.active {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.program {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.program img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.program-details h3 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.program-details p {
+    font-size: 16px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .program {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .program img {
+        margin-bottom: 15px;
+    }
+
+    .tab-link {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Register Here Section */
+.register-here {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-form input,
+.register-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.register-form button {
+    background-color: #ff0056;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-form button:hover {
+    background-color: #e6004e;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  /* FAQ Section Styles */
+  .faq-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .faq-section h2 {
+    margin-bottom: 10px;
+    font-size: 2em;
+  }
+  
+  .faq-section p {
+    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  .faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .faq {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .faq input {
+    display: none;
+  }
+  
+  .faq-toggle {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+  }
+  
+  .faq-label {
+    flex: 1;
+  }
+  
+  .plus {
+    font-size: 20px;
+    margin-left: auto; /* Push the plus symbol to the right */
+    display: block;
+  }
+  
+  .faq-content {
+    display: none; /* Hide content by default */
+    padding: 15px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+  }
+  
+  .faq-content p {
+    margin: 0;
+  }
+  
+  .faq input:checked ~ .faq-content {
+    display: block; /* Show content when checkbox is checked */
+  }
+  
+  .faq input:checked ~ .faq-toggle .plus {
+    display: none; /* Hide the plus symbol when expanded */
+  }
+  
+  /* Venue Section Styles */
+  .venue-section {
+    padding: 50px 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+    color: #333;
+  }
+  
+  .venue-section h2 {
+    margin-bottom: 10px;
+    font-size: 2em;
+  }
+  
+  .venue-section p {
+    color: #666;
+  }
+  
+  .venue p {
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  /* Background image for venue section (if needed) */
+  .venue-section {
+    background-color:lightblue;
+    
+    color:black; /* Changes text color to white for better readability */
+  }
+  

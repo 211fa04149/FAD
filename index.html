@@ -1,0 +1,292 @@
+<html>
+<!DOCTYPE html>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <div class="container">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">NEW EVENT</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Agenda</a></li>
+                    <li><a href="#">Speakers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>Web Design Conference</h1>
+           
+            <p>July 23 - 26 in San Francisco, CA</p>
+            <a href="#" class="read-more-btn">Read More</a>
+            <a href="#" class="btn">Register Now</a>
+        </div>
+    </header>
+
+    <section class="details">
+        <div class="container">
+            <div class="text">
+                <h1>New Event is a fully responsive one-page template for events, conferences, or workshops</h1>
+                <p>New Event is a modern, responsive one-page template designed to showcase essential details for events, from agendas to speakers, location, and registration information, on any device.</p>
+                <p>New Event is a user-friendly, customizable template that integrates seamlessly with social media and email marketing tools, allowing for easy customization and built-in analytics for a memorable experience.</p>
+            </div>
+            <div class="image">
+                <img src="images/conference1.jpeg" alt="Conference">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="info container">
+            <div class="conference">
+                <img src="images/participates.jpeg" alt="conference" class="conference-image">
+                <h3>500 Participants</h3>
+                <p class="info-text">Attending this event will allow me to network with<br>
+                    like-minded professionals and gain insights <br>
+                    into the latest trends
+                    and innovations.</p>
+            </div>
+            <div class="conference">
+                <img src="images/clock.jpeg" alt="conference" class="conference-image">
+                <h3>24 Programs</h3>
+                <p class="info-text">A day is divided into 24 hours,<br> 
+                    providing us with time to work, rest, and rejuvenate <br>
+                    before the cycle begins anew.</p>
+            </div>
+            <div class="conference">
+                <img src="images/microphone.jpeg" alt="conference" class="conference-image">
+                <h3>15 Speakers</h3>
+                <p class="info-text">The speakers from Microsoft will share their <br>
+                    expertise on the latest technological <br>
+                advancements and industry trends, providing valuable <br>
+                insights to attendees.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Watch Video Section -->
+    <section class="watch-video">
+        <div class="content-container">
+            <div class="description-container">
+                <h2>About the Video</h2>
+                <p class="video-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at risus sapien, integer tellus nisi, tristique non aliquam, volutpat tincidunt eros. Sed tristique ornare est, sed euismod sapien. Integer vitae nisi non dolor euismod elementum at ac augue. Fusce quis urna sit amet leo viverra dictum.
+                </p>
+                <p class="video-description">
+                    Vivamus at ultricies purus. Nulla facilisi. Nam nec malesuada turpis, ut egestas ligula. Curabitur ac auctor dui. Nullam at sapien sit amet lectus volutpat congue id eu nunc.
+                </p>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/edIctUyd4RQ" title="Watch Video" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creative Speakers Section -->
+    <section class="creative-speakers-container">
+    
+        <h2>Creative Speakers</h2>
+  
+        <div class="carousel-container">
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <div class="carousel-slide">
+                <div class="speaker">
+                    <img src="images/spea.jpeg" alt="Speaker 1">
+                    <p class="speaker-name">Jenny James</p>
+                </div>
+                <div class="speaker">
+                    <img src="images/speaker1.jpg" alt="Speaker 2">
+                    <p class="speaker-name">David Ross</p>
+                </div>
+                <div class="speaker">
+                    <img src="images/speaker2.jpg" alt="Speaker 3">
+                    <p class="speaker-name">Amy Lee</p>
+                </div>
+                <div class="speaker">
+                    <img src="images/spea.jpeg" alt="Speaker 4">
+                    <p class="speaker-name">Jonathan Doe</p>
+                </div>
+                <div class="speaker">
+                    <img src="images/spea.jpeg" alt="Speaker 5">
+                    <p class="speaker-name">Mike Brown</p>
+                </div>
+            </div>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Our Programs Section -->
+    <div class="programs-section">
+        <h2>Our Programs</h2>
+        <p>Explore all of these programs. Designed to help you achieve your dreams and take on <br>different career paths that interest you and will help you succeed!</p>
+
+        <div class="tab-menu">
+            <button class="tab-link active" onclick="openTab(event, 'design')">Design</button>
+            <button class="tab-link" onclick="openTab(event, 'development')">Development</button>
+            <button class="tab-link" onclick="openTab(event, 'marketing')">Marketing</button>
+        </div>
+
+        <div id="design" class="tab-content active">
+            <div class="program">
+                <img src="images/programer1.jpg" alt="Introduction to Design">
+                <div class="program-details">
+                    <h3  style="text-align: center;">Introduction to Design</h3>
+                    <p>By John Doe</p>
+                    <p>Explore the basics of design and what it takes to develop <br>
+                        effective visuals. This course is perfect for beginners <br>
+                        who want to dive into the world of design.</p>
+                </div>
+            </div>
+
+            <!-- New Program 1 -->
+            <div class="program">
+                <img src="images/speaker2.jpg" alt="Advanced Graphic Design">
+                <div class="program-details">
+                    <h3  style="text-align: center;">Advanced Graphic Design</h3>
+                    <p>By Lisa White</p>
+                    <p>Take your design skills to the next level <br>
+                         with advanced techniques in graphic design. <br>
+                         Learn about complex compositions, color theory, and creative tools.</p>
+                </div>
+            </div>
+
+            <!-- New Program 2 -->
+            <div class="program">
+                <img src="images/programer.jpg" alt="UI/UX Design Fundamentals">
+                <div class="program-details">
+                   
+                    <h3 style="text-align: center;">UI/UX Design Fundamentals</h3>
+                    <p>By Mark Thompson</p>
+                    <p>Understand the core principles of <br>
+                        user interface and user experience design. <br>
+                        This course covers everything from wireframing to creating user-centered designs.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="development" class="tab-content">
+            <div class="program">
+                <img src="images/programer.jpg" alt="Front-End Development">
+                <div class="program-details">
+                    <h3  style="text-align: center;">Front-End Development</h3>
+                    <p>By Jane Smith</p>
+                    <p>Learn how to build beautiful and responsive <br>
+                        websites using HTML, CSS, and JavaScript. <br>
+                        This course will take you from a beginner to a proficient front-end developer.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="marketing" class="tab-content">
+            <div class="program">
+                <img src="images/programer.jpg" alt="Social Media Marketing">
+                <div class="program-details">
+                    <h3>Social Media Marketing</h3>
+                    <p>By Mike Johnson</p>
+                    <p>Master the art of marketing on social media platforms. This course covers strategies, tools, and tips for effectively reaching your audience online.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Here Section -->
+    <section class="register-here">
+        <h2>Register Here</h2>
+        <form class="register-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Phone" required>
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script>
+        function openTab(event, tabName) {
+            const tabContents = document.getElementsByClassName('tab-content');
+            const tabLinks = document.getElementsByClassName('tab-link');
+
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].style.display = "none";
+            }
+
+            for (let i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove('active');
+            }
+
+            document.getElementById(tabName).style.display = "block";
+            event.currentTarget.classList.add('active');
+        }
+
+        // Display the first tab by default
+        document.getElementById('design').style.display = "block";
+
+        function plusSlides(n) {
+            let slideIndex = 0;
+            const slides = document.getElementsByClassName("carousel-slide")[0];
+            const totalSlides = slides.children.length;
+
+            slideIndex = (slideIndex + n + totalSlides) % totalSlides;
+            slides.style.transform = translateX(${-slideIndex * 100}%);
+        }
+    </script>
+    <section class="faq-section">
+        <h2>Do You Have Questions?</h2>
+        <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
+        <div class="faq-container">
+            <div class="faq">
+                <input type="checkbox" id="faq1">
+                <label for="faq1" class="faq-toggle">
+                    <span class="faq-label">What is Responsive Design?</span>
+                    <span class="plus">+</span>
+                </label>
+                <div class="faq-content">
+                    <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate volutpat neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
+                    <p>Nunc eu nibh vel augue mollis tincidunt id efficitur tortor. Sed pulvinar est sit amet tellus iaculis hendrerit. Mauris justo erat, rhoncus in arcu at, scelerisque tempor erat.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <input type="checkbox" id="faq2">
+                <label for="faq2" class="faq-toggle">
+                    <span class="faq-label">What are latest UX Developments?</span>
+                    <span class="plus">+</span>
+                </label>
+                <div class="faq-content">
+                    <p>Content for latest UX developments goes here.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <input type="checkbox" id="faq3">
+                <label for="faq3" class="faq-toggle">
+                    <span class="faq-label">What things about Social Media will be discussed?</span>
+                    <span class="plus">+</span>
+                </label>
+                <div class="faq-content">
+                    <p>Content about social media discussions goes here.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="venue-section">
+        <div class="venue">
+            <h2>Venue</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
+            <p>New Event<br>
+                120 Market Street, Suite 110<br>
+                San Francisco, CA 10110<br>
+                Tel: 010-020-0120
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
